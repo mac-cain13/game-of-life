@@ -29,12 +29,12 @@ while true {
   generation++
 
   if (nextGen == currentGeneration) {
-    println("Generation \(generation) is stable.")
+    println("Generation \(generation).")
     printGeneration(nextGen)
     break
   }
 
-  println("Generation \(generation) is evolving.")
+  println("Generation \(generation)")
   printGeneration(nextGen)
 
   currentGeneration = nextGen
