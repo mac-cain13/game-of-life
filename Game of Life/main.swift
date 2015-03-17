@@ -8,6 +8,7 @@
 
 import Foundation
 
+var generation = 0
 var currentGeneration: Generation = [
   Position(x: 1, y: 0): .Alive,
   Position(x: 2, y: 1): .Alive,
@@ -24,8 +25,18 @@ var currentGeneration: Generation = [
 while true {
   system("clear")
   
-  currentGeneration = nextGeneration(currentGeneration)
-  printGeneration(currentGeneration)
+  let nextGen = nextGeneration(currentGeneration)
+  generation++
 
+  if (nextGen == currentGeneration) {
+    println("Generation \(generation) is stable.")
+    printGeneration(nextGen)
+    break
+  }
+
+  println("Generation \(generation) is evolving.")
+  printGeneration(nextGen)
+
+  currentGeneration = nextGen
   NSThread.sleepForTimeInterval(0.5)
 }

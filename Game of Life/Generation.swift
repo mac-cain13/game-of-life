@@ -47,3 +47,15 @@ func nextGenerationOfCell(cell: Cell, # aliveNeighbours: Int) -> Cell {
     return .Dead
   }
 }
+
+func ==(lhs: [Position: Cell], rhs: [Position: Cell]) -> Bool {
+
+  let rhsCellAtPosition = cellFromGenerationAtPosition(rhs)
+  for (position, cell) in lhs {
+    if rhsCellAtPosition(position) != cell {
+      return false
+    }
+  }
+
+  return true
+}
