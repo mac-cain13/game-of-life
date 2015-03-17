@@ -40,3 +40,13 @@ func edgesForGeneration(g: Generation) -> Edges? {
 func expandEdges(edges: Edges, byAmount amount: Int32) -> Edges {
   return Edges(edges.top - amount, edges.right + amount, edges.bottom + amount, edges.left - amount)
 }
+
+func eachPositionWithinEdges(edges: Edges, effect: (Position, Bool) -> Void) {
+
+  for y in edges.top...edges.bottom {
+    for x in edges.left...edges.right {
+      let position = Position(x: x, y: y)
+      effect(position, x == edges.right)
+    }
+  }
+}

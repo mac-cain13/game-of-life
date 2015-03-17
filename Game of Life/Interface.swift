@@ -21,21 +21,13 @@ func printGeneration(generation: Generation) {
 
     let cellAtPosition = cellFromGenerationAtPosition(generation)
 
-    for y in edges.top...edges.bottom {
-      for x in edges.left...edges.right {
-        let position = Position(x: x, y: y)
-        let cell = cellAtPosition(position)
-        print("\(cell)")
+    eachPositionWithinEdges(edges) { position, lastOfRow in
+      let cell = cellAtPosition(position)
+      print("\(cell)")
+
+      if lastOfRow {
+        println("")
       }
-      println("")
     }
   }
-}
-
-func delay(delay: Double, closure: Void -> Void) {
-  dispatch_after(
-    dispatch_time(DISPATCH_TIME_NOW, Int64(delay * Double(NSEC_PER_SEC))),
-    dispatch_get_main_queue(),
-    closure
-  )
 }

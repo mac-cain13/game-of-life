@@ -17,22 +17,14 @@ func nextGeneration(generation: Generation) -> Generation {
     let edges = expandEdges(currentEdges, byAmount: 1)
     let cellAtPosition = cellFromGenerationAtPosition(generation)
 
-    for y in edges.top...edges.bottom {
-      for x in edges.left...edges.right {
-        let position = Position(x: x, y: y)
-        let cell = cellAtPosition(position)
+    eachPositionWithinEdges(edges) { position, _ in
+      let cell = cellAtPosition(position)
 
-        let aliveNeighboursCount = neighbourPositions(position).map(cellAtPosition).filter { $0 == Cell.Alive }.count
-        let nextGen = nextGenerationOfCell(cell, aliveNeighbours: aliveNeighboursCount)
+      let aliveNeighboursCount = neighbourPositions(position).map(cellAtPosition).filter { $0 == Cell.Alive }.count
+      let nextGen = nextGenerationOfCell(cell, aliveNeighbours: aliveNeighboursCount)
 
-        switch nextGen {
-        case .Alive:
-          nextGeneration[position] = nextGen
-        case .Dead:
-          if position == Origin {
-            nextGeneration[position] = nextGen
-          }
-        }
+      if nextGen == .Alive || position == Origin {
+        nextGeneration[position] = nextGen
       }
     }
   }
