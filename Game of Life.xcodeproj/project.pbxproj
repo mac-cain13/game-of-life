@@ -1,0 +1,264 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D518D00E1AB5C7F000230902 /* main.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D00D1AB5C7F000230902 /* main.swift */; };
+		D518D0151AB5C97500230902 /* Cell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D0141AB5C97500230902 /* Cell.swift */; };
+		D518D0171AB8566400230902 /* Position.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D0161AB8566400230902 /* Position.swift */; };
+		D518D0191AB8587200230902 /* Generation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D0181AB8587200230902 /* Generation.swift */; };
+		D518D01D1AB8691F00230902 /* Interface.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D01C1AB8691F00230902 /* Interface.swift */; };
+		D518D01F1AB89CE100230902 /* Edges.swift in Sources */ = {isa = PBXBuildFile; fileRef = D518D01E1AB89CE100230902 /* Edges.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D518D0081AB5C7F000230902 /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		D518D00A1AB5C7F000230902 /* gol */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = gol; sourceTree = BUILT_PRODUCTS_DIR; };
+		D518D00D1AB5C7F000230902 /* main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = main.swift; sourceTree = "<group>"; };
+		D518D0141AB5C97500230902 /* Cell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cell.swift; sourceTree = "<group>"; };
+		D518D0161AB8566400230902 /* Position.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Position.swift; sourceTree = "<group>"; };
+		D518D0181AB8587200230902 /* Generation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Generation.swift; sourceTree = "<group>"; };
+		D518D01C1AB8691F00230902 /* Interface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Interface.swift; sourceTree = "<group>"; };
+		D518D01E1AB89CE100230902 /* Edges.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Edges.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D518D0071AB5C7F000230902 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D518D0011AB5C7F000230902 = {
+			isa = PBXGroup;
+			children = (
+				D518D00C1AB5C7F000230902 /* Game of Life */,
+				D518D00B1AB5C7F000230902 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D518D00B1AB5C7F000230902 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D518D00A1AB5C7F000230902 /* gol */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D518D00C1AB5C7F000230902 /* Game of Life */ = {
+			isa = PBXGroup;
+			children = (
+				D518D00D1AB5C7F000230902 /* main.swift */,
+				D518D0141AB5C97500230902 /* Cell.swift */,
+				D518D01E1AB89CE100230902 /* Edges.swift */,
+				D518D0161AB8566400230902 /* Position.swift */,
+				D518D0181AB8587200230902 /* Generation.swift */,
+				D518D01C1AB8691F00230902 /* Interface.swift */,
+			);
+			path = "Game of Life";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D518D0091AB5C7F000230902 /* Game of Life */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D518D0111AB5C7F000230902 /* Build configuration list for PBXNativeTarget "Game of Life" */;
+			buildPhases = (
+				D518D0061AB5C7F000230902 /* Sources */,
+				D518D0071AB5C7F000230902 /* Frameworks */,
+				D518D0081AB5C7F000230902 /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Game of Life";
+			productName = "Game of Life";
+			productReference = D518D00A1AB5C7F000230902 /* gol */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D518D0021AB5C7F000230902 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Mathijs Kadijk";
+				TargetAttributes = {
+					D518D0091AB5C7F000230902 = {
+						CreatedOnToolsVersion = 6.3;
+					};
+				};
+			};
+			buildConfigurationList = D518D0051AB5C7F000230902 /* Build configuration list for PBXProject "Game of Life" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = D518D0011AB5C7F000230902;
+			productRefGroup = D518D00B1AB5C7F000230902 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D518D0091AB5C7F000230902 /* Game of Life */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D518D0061AB5C7F000230902 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D518D00E1AB5C7F000230902 /* main.swift in Sources */,
+				D518D0151AB5C97500230902 /* Cell.swift in Sources */,
+				D518D01F1AB89CE100230902 /* Edges.swift in Sources */,
+				D518D0171AB8566400230902 /* Position.swift in Sources */,
+				D518D0191AB8587200230902 /* Generation.swift in Sources */,
+				D518D01D1AB8691F00230902 /* Interface.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		D518D00F1AB5C7F000230902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D518D0101AB5C7F000230902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		D518D0121AB5C7F000230902 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = gol;
+			};
+			name = Debug;
+		};
+		D518D0131AB5C7F000230902 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				PRODUCT_NAME = gol;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D518D0051AB5C7F000230902 /* Build configuration list for PBXProject "Game of Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D518D00F1AB5C7F000230902 /* Debug */,
+				D518D0101AB5C7F000230902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D518D0111AB5C7F000230902 /* Build configuration list for PBXNativeTarget "Game of Life" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D518D0121AB5C7F000230902 /* Debug */,
+				D518D0131AB5C7F000230902 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D518D0021AB5C7F000230902 /* Project object */;
+}

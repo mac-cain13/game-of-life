@@ -1,2 +1,2 @@
-# game-of-life
-Swift implementation of Game of Life
+# Game of Life
+Swift CLI implementation of Game of Life
