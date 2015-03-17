@@ -7,15 +7,15 @@
 //
 
 enum Cell: Printable {
-  case Alive
   case Dead
+  case Alive
 
   var description: String {
     switch self {
-    case .Alive:
-      return "O"
     case .Dead:
       return " "
+    case .Alive:
+      return "O"
     }
   }
 }

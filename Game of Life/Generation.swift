@@ -14,6 +14,7 @@ func nextGeneration(generation: Generation) -> Generation {
   var nextGeneration = Generation(minimumCapacity: generation.count)
 
   if let currentEdges = edgesForGeneration(generation) {
+
     let edges = expandEdges(currentEdges, byAmount: 1)
     let cellAtPosition = cellFromGenerationAtPosition(generation)
 
@@ -21,10 +22,10 @@ func nextGeneration(generation: Generation) -> Generation {
       let cell = cellAtPosition(position)
 
       let aliveNeighboursCount = neighbourPositions(position).map(cellAtPosition).filter { $0 == Cell.Alive }.count
-      let nextGen = nextGenerationOfCell(cell, aliveNeighbours: aliveNeighboursCount)
+      let nextGenCell = nextGenerationOfCell(cell, aliveNeighbours: aliveNeighboursCount)
 
-      if nextGen == .Alive || position == Origin {
-        nextGeneration[position] = nextGen
+      if nextGenCell == .Alive || position == Origin {
+        nextGeneration[position] = nextGenCell
       }
     }
   }
@@ -32,18 +33,16 @@ func nextGeneration(generation: Generation) -> Generation {
   return nextGeneration
 }
 
-func cellFromGenerationAtPosition(genetation: Generation)(_ position: Position) -> Cell {
-  return genetation[position] ?? .Dead
+func cellFromGenerationAtPosition(generation: Generation)(_ position: Position) -> Cell {
+  return generation[position] ?? .Dead
 }
 
-func nextGenerationOfCell(c: Cell, # aliveNeighbours: Int) -> Cell {
+func nextGenerationOfCell(cell: Cell, # aliveNeighbours: Int) -> Cell {
   switch aliveNeighbours {
   case 2:
-    return c
-
+    return cell
   case 3:
     return .Alive
-
   default:
     return .Dead
   }
